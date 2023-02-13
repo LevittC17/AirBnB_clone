@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-"""Amenity class, a subclass of BaseModel"""
-
+"""
+Amenity class, a subclass of BaseModel
+"""
 from models.base_model import BaseModel
 
 
