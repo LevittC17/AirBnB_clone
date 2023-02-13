@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Defines the HBnB console."""
-
 import cmd
 import re
 from shlex import split
@@ -37,17 +36,17 @@ class HBNBCommand(cmd.Cmd):
     Attributes:
         prompt (str): The command prompt.
     """
+
     prompt = "(hbnb) "
-    __class__ = {
+    __classes = {
         "BaseModel",
         "User",
-	"State",
-	"City",
-	"Place",
-	"Amenity",
-	"Review"
+        "State",
+        "City",
+        "Place",
+        "Amenity",
+        "Review"
     }
-
 
     def emptyline(self):
         """Do nothing upon receiving an empty line."""
