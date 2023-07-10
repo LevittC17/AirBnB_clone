@@ -1,3 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* --------: `logo`
+----------------------**/
+nav .logo {
+    background: url("/web_static/images/logo.png") no-repeat;
+    background-position: left;
+    display: block;
+    height: 100%;
+    margin-left: 20px;
+}
+
+/** 
+-------:`filters`, `section`, ` tags
+------------------------------------------**/
 .filters {
     background-color: #FFFFFF;
     height: 70px;
@@ -92,4 +110,33 @@ button {
 
 .amenities:hover .popover {
     display: block;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    nav {
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+        padding: 10px;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+    }
+    .menu-toggle.active + ul{
+        display: block;
+    }
 }
